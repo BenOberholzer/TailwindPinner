@@ -1,0 +1,16 @@
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.exe
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.csprojAssemblyReference.cache
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.AssemblyInfoInputs.cache
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.AssemblyInfo.cs
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.deps.json
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.runtimeconfig.json
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.runtimeconfig.dev.json
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.dll
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Pinner.pdb
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.csproj.CopyComplete
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.dll
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.pdb
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.genruntimeconfig.cache
+C:\Users\Ben\Documents\Dropbox\WindyHill\Clients\SamAnnDesigns\Pinner\obj\Debug\netcoreapp3.1\Pinner.csproj.CoreCompileInputs.cache

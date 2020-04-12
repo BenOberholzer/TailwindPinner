@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ben\\Documents\\Dropbox\\WindyHill\\Clients\\SamAnnDesigns\\Pinner\\Pinner.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ben\\Documents\\Dropbox\\WindyHill\\Clients\\SamAnnDesigns\\Pinner\\Pinner.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ben\\Documents\\Dropbox\\WindyHill\\Clients\\SamAnnDesigns\\Pinner\\Pinner.csproj",
+        "projectName": "Pinner",
+        "projectPath": "C:\\Users\\Ben\\Documents\\Dropbox\\WindyHill\\Clients\\SamAnnDesigns\\Pinner\\Pinner.csproj",
+        "packagesPath": "C:\\Users\\Ben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ben\\Documents\\Dropbox\\WindyHill\\Clients\\SamAnnDesigns\\Pinner\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Selenium.Mozilla.Firefox.Webdriver": {
+              "target": "Package",
+              "version": "[0.6.0.1, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver.ChromeDriver": {
+              "target": "Package",
+              "version": "[81.0.4044.6900, )"
+            },
+            "Selenium.WebDriver.GeckoDriver.Win64": {
+              "target": "Package",
+              "version": "[0.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
