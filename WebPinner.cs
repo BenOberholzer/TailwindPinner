@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
+
 
 namespace Pinner
 {
@@ -67,7 +68,17 @@ namespace Pinner
             List<string> productLinks = new List<string>();
                         
             foreach(IWebElement item in links) {
-                url = item.GetAttribute("href");
+                try {
+                    url = item.GetAttribute("href");
+                }
+                catch (NoSuchElementException e) {
+                    IWebElement advert = driver.FindElement(By.ClassName("bx-close-link"));
+                    advert.Click();
+                }
+                finally {
+                    url = item.GetAttribute("href");
+                }
+                
                 productLinks.Add(url);
                 Console.WriteLine(url);                
             }
@@ -77,9 +88,13 @@ namespace Pinner
                 Console.WriteLine("going to product");
                 driver.Navigate().GoToUrl(prodLink);
                 Thread.Sleep(2000);
-                IWebElement scheduleButton = driver.FindElement(By.Id("tw_schedule_btn"));
-                clicker.MoveToElement(scheduleButton).Click().Perform();
-                scheduleButton.Click();
+
+                //
+
+                // get all the buttons and then use the first one
+                WebPinner.ClickScheduleButton(driver);
+                //clicker.MoveToElement(scheduleButton).Click().Perform();
+                
                 Thread.Sleep(2500);
 
                 Console.WriteLine("going home");
@@ -93,6 +108,32 @@ namespace Pinner
             }
 
             return true;
+        }
+
+        public static void ClickScheduleButton(IWebDriver driver) {
+            IList<IWebElement> buttons = driver.FindElements(By.XPath("//*[@id='tw_schedule_btn']"));
+            IWebElement scheduleButton = buttons.ElementAt(0);
+
+            TimeSpan tspan = new TimeSpan(100);
+            WebDriverWait wait = new WebDriverWait(driver, tspan);
+//            wait.Until(ExpectedConditions.visibilityOfElementLocated(By.XPath("//*[@id='tw_schedule_btn']")));
+            wait.Until(WebPinner.ElementIsVisibleAndEnabled(scheduleButton));
+            
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(scheduleButton).Perform();
+            actions.MoveToElement(scheduleButton).Click().Perform();
+        }
+
+        public static Func<IWebDriver, bool> ElementIsVisibleAndEnabled(IWebElement element) {
+            return (driver) =>  {
+                try {
+                    return element.Displayed && element.Enabled;
+                }
+                catch (Exception) {
+                    // If element is null, stale or if it cannot be located
+                    return false;
+                }
+            };
         }
 
         static private Boolean OpenNewTab(string url, IWebDriver driver)
